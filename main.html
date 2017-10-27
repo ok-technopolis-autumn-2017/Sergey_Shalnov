@@ -9,36 +9,34 @@
 <body>
     <h1 class="todos-title">ToDos</h1>
     <div class="todos-add">
-        <button class="todos-add_select-all" 
-                aria-label="Отметить все как выполненные">
-        </button>
+        <button class="todos-add_select-all" aria-label="Отметить все как выполненные"></button>
         <input  class="todos-add_input" placeholder="Добавить" aria-label="Поле добавления todo" />
     </div>
     <div class="todos-list">
-        <div class="todos-list_item">
-            <input  class="todos-list-item_input" value="Узнать про HTML" />
+        <div class="todos-list-item">
             <input  class="todos-list-item_done" type="checkbox" checked="checked" aria-label="Пометить как невыполненное" />
+            <input  class="todos-list-item_input" value="Узнать про HTML" />
             <button class="todos-list-item_delete" aria-label="Удалить"></button>
         </div>
-        <div class="todos-list_item">
+        <div class="todos-list-item">
+            <input  class="todos-list-item_done" type="checkbox" aria-label="Пометить как выполненное" />
             <input  class="todos-list-item_input" value="Написать HTML" />
-            <input  class="todos-list-item_done" type="checkbox" aria-label="Пометить как выполненное" />
             <button class="todos-list-item_delete" aria-label="Удалить"></button>
         </div>
-        <div class="todos-list_item">
-            <input  class="todos-list-item_input" value="Написать css" />
+        <div class="todos-list-item">
             <input  class="todos-list-item_done" type="checkbox" aria-label="Пометить как выполненное" />
+            <input  class="todos-list-item_input" value="Написать css" />
             <button class="todos-list-item_delete" aria-label="Удалить"></button>
         </div>
     </div>
     <div class="todos-actions-bar">
-        <div class="todos-actions-bar_counter" aria-label="Количество не сделанных todo">N не выполнено</div>
+        <div class="todos-actions-bar_counter" aria-label="Количество не сделанных todo">n не выполнено</div>
         <div class="todos-filters">
             <button class="todos-filter __active" data-filter="all" aria-label="Фильтр: показать все">Все</button>
             <button class="todos-filter" data-filter="ready" aria-label="Фильтр: показать невыполненные">Невыполненные</button>
             <button class="todos-filter __active" data-filter="unready"aria-label="Фильтр: показать выполненные">Выполненные</button>
         </div>
-        <button class="todos-actions-bar_clear-completed">Удалить завершённые</button>
+        <button class="todos-actions-bar_clear-button">Удалить завершённые</button>
     </div>
 </body>
 
