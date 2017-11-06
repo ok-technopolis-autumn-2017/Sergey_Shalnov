@@ -1,0 +1,77 @@
+.todos-list-item {
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    }
+
+    .todos-list-item.__done > .todos-list-item_input{
+        text-decoration: line-through;
+        color: #cccccc;
+    }
+
+    .todos-list-item:hover  {
+        background-color: #fafafa;
+    }
+
+    .todos-list-item_done {
+        width: 64px;
+        height: 64px;
+        padding: 0;
+        margin: 0;
+
+        position: relative;
+        }
+
+    .todos-list-item_delete {
+        width: 64px;
+        height: 64px;
+        float: right;
+
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        
+        position: relative;
+        outline: none;
+        }
+
+        .todos-list-item:hover > .todos-list-item_delete > .todos-list-item_delete_icon{
+            width: 17px;
+            height: 17px;
+            background: url('../../img/icons/close.png') no-repeat 0 0;
+
+            position: absolute;     /* ??? */
+            left: 50%;
+            top: 50%;
+            margin: -6px -12px;
+        }
+
+    .todos-list-item_input {
+        width: 100%;
+        height: 64px;
+        position: absolute;
+
+        min-width: 152px;
+        max-width: 432px;
+
+        right: 64px;
+        left: 64px;
+
+        resize: none;
+
+        color: #666;
+        font-size: 24px;
+        font-weight: 200;
+
+        box-sizing: border-box;     
+        border: none;
+        background: none; 
+
+
+
+        line-height: 64px;
+        vertical-align: middle;
+
+        outline: none;
+    }

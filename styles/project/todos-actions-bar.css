@@ -1,0 +1,37 @@
+.todos-actions-bar {
+    height: 40px;
+    position: relative;
+    display: block;
+    }
+
+    .todos-actions-bar_counter {
+        position: relative;
+        float: left;
+
+        left: 10px;
+        line-height: 40px;
+        vertical-align: middle;
+
+        color: #666;
+        font-size: 14px;
+        font-weight: 200;
+        }
+
+    .todos-actions-bar_clear-button {
+        padding: 0;
+        margin: 0;
+
+        position: relative;
+        float: right;
+
+        right: 10px;
+        line-height: 40px;
+        vertical-align: middle;
+
+        color: #666;
+        font-size: 14px;
+        font-weight: 200;
+
+        border: none;
+        background: none;
+    }
