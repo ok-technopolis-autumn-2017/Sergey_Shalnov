@@ -9,17 +9,18 @@
         }
 
     .todos-add_select-all {
-        width: 64px;
-        height: 64px;
-
-        background: none;
-        border: none;
-        padding: 0;
-        margin: 0;
-        
         float: left;
         position: relative;
+
+        width: 60px;
+        height: 64px;
+
+        padding: 0;
+        margin: 0;
+
+        border: none;
         outline: none;
+        background: none;
         }
 
         .todos-add_select-all:focus {
@@ -27,39 +28,39 @@
         }
 
         .todos-add_select-all_icon {
-            width: 24px;
-            height: 12px;
-            background: url('../../img/icons/select-all.png') no-repeat 0 0;
-
-            position: absolute;     /* ??? */
+            position: absolute;     
+            
             left: 50%;
             top: 50%;
             margin: -6px -12px;
+
+            width: 24px;
+            height: 12px;
+            
+            background: url('../../img/icons/select-all.png') no-repeat 0 0;
             }
 
     .todos-add_input-wrapper {
-        overflow: hidden;           /* ??? */
+        overflow: hidden;           
         }
 
     .todos-add_input {
         width: 100%;
-        box-sizing: border-box;     /* ??? */
+        box-sizing: border-box;     
+
+        padding-right: 12px;
+        padding: 0;
+
         border: none;
+        outline: none;
         background: none;
 
         color: #666;
         font-size: 24px;
         font-weight: 200;
 
-        padding-right: 12px;
-
         line-height: 64px;
         vertical-align: middle;
-
-        /* выравнивание по вертикали */
-        /* margin-top: 15px; */
-
-        outline: none;
         }
 
         .todos-add_input::placeholder {
