@@ -1,0 +1,128 @@
+.todos-list-item {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    border-bottom: $brd-b_list-item;
+    }
+
+    .input-checkbox {
+        position: relative;
+        float: left;
+
+        width: $w_checkbox;
+        height: $h_checkbox;
+        }
+        .input-checkbox_target {
+            position: absolute;
+            opacity: 0;
+
+            width: 100%;
+            height: 100%;
+
+            @include zeroLeftTop ();
+            @include zeroPaddingMargin();
+
+            z-index: 1;
+            }
+        .input-checkbox_visual {
+            position: absolute;
+
+            width: $w_checkbox_visual;
+            height: $h_checkbox_visual;
+
+            top: $top_checkbox-visual;
+            right: $right_checkbox-visual;
+
+            border: $brd_checbox_visual;
+            border-radius: $br_circle;
+            }
+
+            .input-checkbox_target:hover ~ .input-checkbox_visual {
+                border: $brd_checbox_hover
+                }
+
+            .input-checkbox_target:checked ~ .input-checkbox_visual {
+                background: url($img_checbox_url) no-repeat 8px 8px;
+                border: $brd_checbox_checked;
+                }
+
+            .input-checkbox_target:hover:checked ~ .input-checkbox_visual {
+                /*
+                    какой цвет у кружочка чекбокса при наведении мыши?
+
+                    border: 1px solid #??????;
+                    background: url('../../img/icons/completed.png') no-repeat 8px 8px;
+                */
+                }
+
+    .todos-list-item.__done > .todos-list-item_input{
+        text-decoration: line-through;
+        color: $c-line-through;
+        }
+
+    .todos-list-item:hover  {
+        background-color: $c-bg-item-hover;
+        }
+
+
+    .todos-list-item_delete {
+        position: relative;
+        align-self: flex-end;
+        order: 3;
+
+        float: right;
+
+        @include zeroPaddingMargin();
+
+        width: $w-delete-button;
+        height: $h-delete-button;
+
+        @include noBorders();
+        }
+
+        .todos-list-item:hover > .todos-list-item_delete > .todos-list-item_delete_icon{
+            position: absolute;
+
+            width: $w_delete-button_img;
+            height: $h_delete-button_img;
+
+            @include fiftyLeftTop();
+
+            margin: $margin_delete-button-img;
+
+            background: url($img_delete_url) no-repeat 0 0;
+            }
+
+    .todos-list-item_input {
+        flex: 1 0;
+
+        position: relative;
+        align-self: flex-start;
+
+        @include zeroLeftTop;
+
+        right: $right_input;
+
+        margin-top: $margin-top_input;
+        margin-bottom: $margin-bottom_input;
+
+        color: $c-input_text;
+        font-size: $fs_input;
+        font-weight: $fw;
+
+        line-height: $lh_input;
+        vertical-align: middle;
+
+        box-sizing: border-box;
+
+        @include noBorders();
+
+        overflow: hidden;
+        word-wrap: break-word;
+        }
+
+    .todos-list-item_done {
+        float: left;
+        }

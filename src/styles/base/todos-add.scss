@@ -1,0 +1,62 @@
+.todos-add {
+    border-bottom: $brd-b_list-item;
+    }
+
+    .todos-add:after {
+        content: '';
+        display: block;
+        clear: both;
+        }
+
+    .todos-add_select-all {
+        float: left;
+        position: relative;
+
+        width: $w_select-all;
+        height: $h_select-all;
+
+        @include zeroPaddingMargin();
+        @include noBorders();
+        }
+
+        .todos-add_select-all:focus {
+            background: $c-bg-select-all_focus;
+            }
+
+        .todos-add_select-all_icon {
+            position: absolute;
+
+            @include fiftyLeftTop();
+
+            margin: $margin_select-all-img;
+
+            width: $w_select-all_img;
+            height: $h_select-all_img;
+
+            background: url($img_select-all_url) no-repeat 0 0;
+            }
+
+    .todos-add_input-wrapper {
+        overflow: hidden;
+        }
+
+    .todos-add_input {
+        width: 100%;
+        box-sizing: border-box;
+
+        @include zeroPaddingMargin();
+        @include noBorders();
+
+        color: $c-input_text;
+        font-size: $fs_input;
+        font-weight: $fw;
+
+        line-height: $lh_input-add;
+        vertical-align: middle;
+        }
+
+    .todos-add_input::placeholder {
+        color: $c-input_placeholder;
+        font-style: italic;
+        }
+

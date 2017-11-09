@@ -1,0 +1,32 @@
+.todos-container {
+    position: relative;
+
+    background-color: $c-bg-container;
+    box-shadow: $bs;
+    }
+
+    .todos-container:before,
+    .todos-container:after {
+        content: '';
+        position: absolute;
+
+        top: 100%;
+
+        background: $c-bg-container;
+        box-shadow: $bs;
+        z-index: -1;
+        }
+
+        .todos-container:before {
+            height: $h_shadow_before;
+
+            left: $left_shadow_before;
+            right: $right_shadow_before;
+            }
+
+        .todos-container:after {
+            height: $h_shadow_after;
+
+            left: $left_shadow_after;
+            right: $right_shadow_after;
+            }

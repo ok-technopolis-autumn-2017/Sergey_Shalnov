@@ -1,0 +1,47 @@
+/* default offsets */
+$offset      : 4px;
+$offset_half : $offset / 2;
+$offset_2x   : $offset * 2;
+$offset_3x   : $offset * 3;
+$offset_4x   : $offset * 4;
+$offset_5x   : $offset * 5;
+$offset_6x   : $offset * 6;
+$offset_7x   : $offset * 7;
+$offset_8x   : $offset * 8;
+$offset_9x   : $offset * 9;
+$offset_10x  : $offset * 10;
+
+
+/* main-wrapper */
+$margin_main-wrapper  : 0 auto;
+$padding_main-wrapper : 0 20px;
+
+/* list input */
+$margin-top_input    : 14px;
+$margin-bottom_input : 14px;
+$right_input         : 64px;
+
+/* checkbox */
+$top_checkbox-visual   : 12px;
+$right_checkbox-visual : 12px;
+
+
+/* shadow */
+$left_shadow_before  : 4px;
+$left_shadow_after   : 2px;
+$right_shadow_before : $left_shadow_before;
+$right_shadow_after  : $left_shadow_after;
+
+/* counter */
+$left_counter : 10px;
+
+/* clear-button */
+$right_clear-button : $left_counter;
+
+/* filters */
+$left_filter  : 10px;
+$right_filter : $left_filter;
+
+/* image margin */
+$margin_select-all-img    : -6px -12px;
+$margin_delete-button-img : -8px -12px;

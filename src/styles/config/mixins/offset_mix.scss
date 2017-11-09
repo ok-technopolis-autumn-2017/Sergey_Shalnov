@@ -1,0 +1,14 @@
+@mixin zeroLeftTop() {
+    top: 0;
+    left: 0;
+    }
+
+@mixin zeroPaddingMargin() {
+    padding: 0;
+    margin: 0;
+    }
+
+@mixin fiftyLeftTop() {
+    top: 50%;
+    left: 50%;
+    }

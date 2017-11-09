@@ -1,0 +1,21 @@
+.todos-filters {
+    position: relative;
+
+    line-height: $lh_actions-bar;
+    vertical-align: middle;
+
+    text-align: center;
+    }
+
+.todos-filter {
+    color: $c-actions-bar_text;
+    font-size: $fs_default;
+    font-weight: $fw;
+
+    @include noBorders();
+    }
+
+.todos-filter.__active {
+    border: $brd_filter-button;
+    border-radius: $br_filter-button;
+    }

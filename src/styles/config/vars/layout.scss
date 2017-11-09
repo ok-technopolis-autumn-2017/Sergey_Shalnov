@@ -1,0 +1,59 @@
+/* layout */
+$width-min : 280px;
+$width-max : 560px;
+
+
+/* checkbox */
+$w_checkbox : 60px;
+$h_checkbox : 60px;
+$w_checkbox_visual : 36px;
+$h_checkbox_visual : 36px;
+    /* image */
+    $w_checkbox_img : 8px;
+    $h_checkbox_img : 8px;
+
+
+/* delete-button*/
+$w-delete-button : 42px;
+$h-delete-button : 60px;
+    /* image */
+    $w_delete-button_img : 18px;
+    $h_delete-button_img : 18px;
+
+
+/* borders*/
+$border-main-size    : 1px;
+$brd-b_list-item     : $border-main-size solid $c-border-item;
+$brd_checbox_visual  : $border-main-size solid $c-border-checkbox;
+$brd_checbox_hover   : $border-main-size solid $c-border-checkbox-hover;
+$brd_checbox_checked : $border-main-size solid $c-border-checkbox-checked;
+
+/* select-all */
+$w_select-all : 60px;
+$h_select-all : 64px;
+    /* image */
+    $w_select-all_img : 24px;
+    $h_select-all_img : 12px;
+
+
+/* shadow */
+$h_shadow_before : 10px;
+$h_shadow_after  : 5px;
+
+/* box-shadow */
+$bs : 0 2px 4px rgba(0, 0, 0, .2);
+
+
+/* border-radius */
+$br_circle : 50%;
+
+/* actions-bar */
+$h_actions-bar : 40px;
+
+/* filters */
+$brd_filter-button : 1px solid #ebdfdf;
+$br_filter-button  : 3px;
+
+
+
+
